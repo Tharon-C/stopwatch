@@ -1,0 +1,154 @@
+/* Variables */
+:root {
+  --secondary: #ff0093;
+  --primary: #05f4a1;
+  --grey: #f3f3f3;
+  --black: rgb(28, 28, 28);
+  --white: #fff;
+}
+/* App */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-size: 10px;
+  background: var(--grey);
+  font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 56px 0;
+  width: 100%;
+  height: 100vh;
+  color: var(--black);
+  text-align: center;
+}
+.AppBar {
+  position: fixed;
+  width: 100%;
+  margin-bottom: 48px;
+  background: white;
+  margin-top: 0;
+  padding: 10px;
+  z-index: 999;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.ButtonRemove {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+}
+.ButtonAdd {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+}
+
+/* StopWatch */
+.Stopwatch {
+  flex: 0 0 33em;
+  position: relative;
+  margin-bottom: 40px;
+}
+.TimeDisplay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--black);
+  border-radius: 999px;
+  width: 5em;
+  height: 5em;
+  margin: auto;
+  font-size: 5em;
+}
+.ButtonReset {
+  position: absolute;
+  bottom: calc(50% - 18px);
+  right: -18px;
+}
+.ButtonToggleStart {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: -28px;
+}
+
+/* Typography */
+.t-display-1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 200;
+}
+.t-center {
+  text-align: center;
+}
+
+/* Input */
+.Button {
+  transition: all 0.12s ease-in-out;
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  font-size: 3em;
+  line-height: 1;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+}
+.Button:hover {
+  transition: all 0.12s ease-in-out;
+}
+.Button:hover:after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.Button:active {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.Button--primary {
+  fill: var(--white);
+  background: var(--primary);
+}
+.Button--secondary {
+  fill: var(--white);
+  background: var(--secondary);
+}
+.Button--default {
+  fill: var(--black);
+  background: var(--white);
+}
+.Button--lg {
+  height: 62px;
+  width: 62px;
+}
+.Button--lg icon {
+  width: 42px;
+  height: 42px;
+}
+.Button--sm {
+  height: 36px;
+  width: 36px;
+}
+
+/* modifier */
+.__shrink {
+  transform: scale(0);
+  transition: all 0.12s ease-in-out;
+}
