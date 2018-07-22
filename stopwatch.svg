@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11.5,22 C6.80557963,22 3,18.1944204 3,13.5 C3,8.80557963 6.80557963,5 11.5,5 C16.1944204,5 20,8.80557963 20,13.5 C20,18.1944204 16.1944204,22 11.5,22 Z M11.5,20 C15.0898509,20 18,17.0898509 18,13.5 C18,9.91014913 15.0898509,7 11.5,7 C7.91014913,7 5,9.91014913 5,13.5 C5,17.0898509 7.91014913,20 11.5,20 Z" id="Combined-Shape" fill="#000000"></path>
+        <rect id="Rectangle" fill="#000000" x="10" y="2" width="3" height="2"></rect>
+        <rect id="Rectangle-Copy" fill="#000000" transform="translate(19.230226, 6.791854) rotate(50.000000) translate(-19.230226, -6.791854) " x="18.2302259" y="5.79185427" width="2" height="2"></rect>
+        <circle id="Oval-3" fill="#000000" cx="11.5" cy="13.5" r="1.5"></circle>
+        <rect id="Rectangle-2" fill="#000000" transform="translate(13.798133, 11.571637) rotate(50.000000) translate(-13.798133, -11.571637) " x="13.2981333" y="9.07163717" width="1" height="5"></rect>
+    </g>
+</svg>
