@@ -2,6 +2,8 @@
 
 [View Demo](https://tharon-c.github.com/stopwatch)
 
+_Note: This is using newer CSS features that are not supported or consistent across all browsers. For best results use latest versions of Chrome, Firefox, or MS Edge._
+
 ## Project Goal
 
 The goal of this project is to build a modular Stopwatch that can be rendered many times on one page and still work independently of each other using plain Javascript and no libraries.
