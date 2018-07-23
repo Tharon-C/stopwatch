@@ -83,6 +83,7 @@ function StopWatchTemplate(key) {
   root.innerHTML += `
         <div class="TimeDisplay">
         <span
+            aria-label="Stopwatch ${key} time display"
             id="counter${key}"
             class="TimeDisplay_counter"
         >
@@ -207,7 +208,7 @@ function renderStopWatch(key) {
     }
 
     // Build strings as cleanest information for current values
-    const tensStr =
+    const millisecondStr =
       state.milliseconds < 10 && state.seconds > 0
         ? "0" + state.milliseconds.toString()
         : state.milliseconds;
@@ -218,7 +219,7 @@ function renderStopWatch(key) {
     const minutesStr = state.minutes > 0 ? state.minutes.toString() + ":" : "";
 
     // Define full counter string
-    const string = `${minutesStr}${secondsStr}:${tensStr}`;
+    const string = `<span aria-label="${minutesStr ? minutesStr : "0"} Minutes ${secondsStr} Seconds and ${millisecondStr} Milliseconds">${minutesStr}${secondsStr}:${millisecondStr}</span>`;
 
     // Render counter string to counter Element
     counterEl.innerHTML = string;
