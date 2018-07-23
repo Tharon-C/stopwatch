@@ -125,7 +125,7 @@ function renderStopWatch(key) {
     .getElementById("app")
     .appendChild(StopWatchTemplate(key));
 
-  // Bind to elemnts that need to be injected
+  // Bind to elements that need to be injected
   const counterEl = document.getElementById("counter" + key);
 
   // Bind to inputs for event listeners
@@ -137,7 +137,7 @@ function renderStopWatch(key) {
     // Show ResetButton
     buttonReset.classList.remove("__shrink");
 
-    // ??
+    // Stop Interval
     clearInterval(state.Interval);
 
     // Start timer
@@ -148,7 +148,7 @@ function renderStopWatch(key) {
   };
   // Stop the timer
   const onStop = () => {
-    // ??
+    // Stop Interval
     clearInterval(state.Interval);
 
     // Button content for when stopped
@@ -171,8 +171,8 @@ function renderStopWatch(key) {
   buttonReset.onclick = function() {
     // Hide ResetButton
     buttonReset.classList.add("__shrink");
-
-    // ??
+    
+    // Stop Interval
     clearInterval(state.Interval);
 
     // Set time values to 00
